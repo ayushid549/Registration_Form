@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:whitesmoke;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.container{
+    background:white;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow:auto;
+    width: calc(100vw-45vw);
+}
+
+.header{
+    padding:25px 0;
+    background-color: rgb(121, 121, 249);
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10px;
+    font-family:sans-serif;
+}
+
+.form{
+    padding:20px;
+    display: inline-block;
+}
+
+.form .form-control{
+    padding:10px;
+}
+
+.form .form-control input{
+    width: 100%;
+    margin-top: 7px;
+    padding: 5px;
+    font-family:sans-serif;
+} 
+
+.form .form-control small{
+    position: absolute;
+    visibility: hidden;
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: rgb(13, 13, 13);
+}
+
+.form-control.error input{
+    outline: 0;
+    border-color: red;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+.form-control.success input{
+    outline: 0;
+    border-color: green;
+}
+
+.form .form-control label{
+    font-family:sans-serif;
+}
+
+.btn{
+    cursor: pointer;
+    width: 100%;
+    font-family:sans-serif;
+    font-size: 16px;
+    font-weight:bold;
+    text-transform: uppercase;
+    background-color: rgb(121, 121, 249);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    display: block;
+    margin-top: 20px;
+    padding: 10px 0;
+}
